@@ -189,3 +189,58 @@ h3 {
     }
   }
 }
+
+.toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &__label {
+    font-size: 1.6rem;
+    margin-left: 1rem;
+  }
+
+  &__btn {
+    outline: 0;
+    display: inline-block;
+    width: 3.3rem;
+    height: 1.8rem;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    background: #C0C0C0;
+    border-radius: 2rem;
+    padding: 2px;
+    transition: all 0.4s ease;
+
+    &:after,
+    &:before {
+      position: relative;
+      display: block;
+      content: '';
+      width: 50%;
+      height: 100%;
+    }
+    &:after {
+      border-radius: 50%;
+      background: #fff;
+      transition: all 0.2s ease;
+      left: 0;
+    }
+    &:before {
+      display: none;
+    }
+  }
+
+  &__input {
+    display: none;
+
+    &:checked + .toggle__btn {
+      background: $color-black-brand;
+
+      &:after {
+        left: 50%;
+      }
+    }
+  }
+}
