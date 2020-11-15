@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/style.css" />
+  </head>
+  <body>
+    <h1>Custom checkbox and radio</h1>
+    <br />
+    <h3>Checkbox</h3>
+    <label class="checkbox">
+      <input type="checkbox" checked="checked" class="checkbox__input" />
+      <span class="checkbox__label">One</span>
+      <span class="checkbox__checkmark"></span>
+    </label>
+    <br />
+    <label class="checkbox">
+      <input
+        type="checkbox"
+        checked="checked"
+        class="checkbox__input"
+        id="indeterminate"
+      />
+      <span class="checkbox__label">Indeterminate</span>
+      <span class="checkbox__checkmark"></span>
+    </label>
+    <br />
+    <label class="checkbox">
+      <input type="checkbox" checked="checked" class="checkbox__input" />
+      <span class="checkbox__checkmark"></span>
+    </label>
+    <br />
+    <label class="checkbox">
+      <input type="checkbox" checked="checked" class="checkbox__input" />
+      <span class="checkbox__label">Four</span>
+      <span class="checkbox__checkmark"></span>
+    </label>
+    <br />
+
+    <h3>Checkbox with tag</h3>
+    <label class="checkbox checkbox--tag">
+      <input type="checkbox" checked="checked" class="checkbox__input" />
+      <span class="checkbox__label">One</span>
+      <span class="checkbox__checkmark"></span>
+    </label>
+    <br />
+    <label class="checkbox checkbox--tag checkbox--nolabel">
+      <input
+        type="checkbox"
+        checked="checked"
+        class="checkbox__input"
+      />
+      <span class="checkbox__label">
+              
+      </span>
+      <span class="checkbox__checkmark"></span>
+    </label>
+
+    <h3>Radio button</h3>
+     <label class="radio">
+      <span class="radio__label">One</span>
+      <input type="radio" checked="checked" name="radio" class="radio__input" />
+      <span class="radio__checkmark"></span>
+    </label>
+    <br />
+     <label class="radio">
+      <span class="radio__label">Two</span>
+      <input type="radio" checked="checked" name="radio" class="radio__input" />
+      <span class="radio__checkmark"></span>
+    </label>
+    <br />
+     <label class="radio">
+      <input type="radio" checked="checked" name="radio" class="radio__input" />
+      <span class="radio__checkmark"></span>
+    </label>
+
+    <script src="dist/bundle.js"></script>
+  </body>
+</html>
